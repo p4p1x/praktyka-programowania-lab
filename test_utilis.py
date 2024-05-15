@@ -1,22 +1,31 @@
 # przykladowe testy w pliku test_utilis.py
 import pytest
 import utils
-@pytest.mark.parametrize("a, b, expected", [(1,2,3), (2,3,5), (3,4,7), (4,5,9)])
+
+
+@pytest.mark.parametrize("a, b, expected", [(1, 2, 3), (2, 3, 5), (3, 4, 7), (4, 5, 9)])
 def test_add(a, b, expected):
-    result = utilis.add(a, b)
+    result = utils.add(a, b)
     assert result == expected
 
-@pytest.mark.parametrize("a, b, expected", [(1, 2, -1), (2, 3, -1), (3,4,-1), (4, 5, -1)])
+
+@pytest.mark.parametrize(
+    "a, b, expected", [(1, 2, -1), (2, 3, -1), (3, 4, -1), (4, 5, -1)]
+)
 def test_subtract(a, b, expected):
-    result = utilis.subtract(a, b)
+    result = utils.subtract(a, b)
     assert result == expected
 
-@pytest.mark.parametrize("a, b, expected", [(1, 2, 2), (2, 3, 6), (3, 4, 12), (4, 5, 20)])
+
+@pytest.mark.parametrize(
+    "a, b, expected", [(1, 2, 2), (2, 3, 6), (3, 4, 12), (4, 5, 20)]
+)
 def test_multiply(a, b, expected):
-    result = utilis.multiply(a, b)
+    result = utils.multiply(a, b)
     assert result == expected
+
 
 @pytest.mark.parametrize("a, b, expected", [(1, 2, 0.5), (3, 4, 0.75), (4, 5, 0.8)])
 def test_divide(a, b, expected):
-    result = utilis.divide(a, b)
+    result = utils.divide(a, b)
     assert result == expected
