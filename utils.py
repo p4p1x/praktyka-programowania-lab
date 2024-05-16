@@ -1,4 +1,6 @@
 """przykladowe funkcje utils.py"""
+
+
 def add(a: int, b: int) -> int:
     """zwraca sume a i b"""
     return a + b
