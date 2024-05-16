@@ -1,4 +1,4 @@
-# przykladowe testy w pliku test_utilis.py
+# przykladowe testy w pliku test_utils.py
 import pytest
 import utils
 
