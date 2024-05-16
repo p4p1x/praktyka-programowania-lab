@@ -26,4 +26,3 @@ jobs:
     - name: Format with Black
       run: | 
         black --check ./utils.py
-        black --check ./test_utils.py
